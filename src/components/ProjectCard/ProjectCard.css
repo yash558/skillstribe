@@ -1,0 +1,76 @@
+.project_card{
+    border: 2px solid black;
+    width: 70%;
+    margin: 3rem;
+    padding: 1.2rem;
+    border-radius: 20px;
+}
+
+.project_heading h2{
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+.project_heading h5, .project_details h4{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.project_desc{
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.project_date{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.project_date .line{
+padding: 1px;
+width: 100%;
+margin-left: 10px;
+height: 1px;
+margin-top: 10px;
+background: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.project_link{
+    background-color: #D8C8B0;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.project_link a{
+    border-radius: 10px;
+    background-color: #D8C8B0;
+    cursor: pointer;
+}
+
+.project_link:hover, .project_link a:hover {
+    color: #D8C8B0;
+    background-color: #fff;
+}
+.project_text:hover{
+    color: #D8C8B0;
+    background-color: #fff;
+}
+.project_text{
+    color: black;
+    background-color: #fff;
+}
+
+@media only screen and (max-width:768px){
+    .project_card{
+        width: 90%;
+        margin-left: 5%;
+    }
+}

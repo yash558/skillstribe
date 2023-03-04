@@ -1,0 +1,83 @@
+.myAccount {
+  display: flex;
+  flex-direction: row;
+  margin: 8rem 1rem 2rem 12rem;
+  width: 50%;
+  /* margin: 6rem; */
+}
+.myAccount_wrapper{
+  width:100%
+}
+.myaccount_heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.myaccount_heading h1 {
+    color: #000;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.myaccount_heading button {
+  padding: 8px;
+  border-radius: 8px;
+  width: 200px;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: #ad021a;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.myAccount label{
+    font-size: 21px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.myAccount input , .myAccount textarea, .myAccount select{
+    border: 1px solid black;
+    background-color: #D8C8B0;
+}
+
+.other_details{
+  margin: 3rem auto 1rem;
+}
+@media only screen and (max-width:990px){
+  .myAccount{
+    flex-direction: column-reverse !important;
+    width: 95%;
+    margin: 6rem 2.5%;
+  }
+
+  .myAccount_wrapper{
+    margin-top: 3rem;
+  }
+
+  .myAccount .public_right{
+    position: inherit;
+  }
+
+  .myaccount_heading{
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .myaccount_heading button{
+    width: fit-content;
+    padding: 10px 20px;
+  }
+
+  .myaccount_heading h1{
+    margin-bottom: 0;
+  }
+
+  .countryCode_timezone{
+    gap:2rem !important
+  }
+}

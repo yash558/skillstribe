@@ -1,0 +1,25 @@
+.page-not-found-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+	div {
+		width: 100%;
+
+	}
+
+	.page-not-found-header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem;
+		margin: auto;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		width: 50%;
+		height: 30rem;
+		text-align: center;
+		box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.10);
+	}
+}

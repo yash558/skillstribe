@@ -1,0 +1,100 @@
+.user_card{
+    border: 1px solid black;
+    width: 70%;
+    margin: 3rem;
+    padding: 1.2rem;
+    border-radius: 20px;
+    
+}
+
+.user_heading h2{
+    font-weight: 500;
+    font-size: 30px;
+}
+.user_heading h5, .user_details h4{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.proposal_1 p{
+    margin-left: 20%;
+    text-align: center;
+    padding: 3px;
+    width: 25px;
+    background-color: #fff;
+}
+
+.proposal_1 .stat{
+    padding: 4.6px;
+    margin-bottom: 1.2rem;
+}
+
+.proposal_1 .status{
+    padding: 8px;
+    height: 100%;
+    width: 50%;
+    
+    background-color: #61A87F;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.proposal_1 h5{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.user_desc{
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.user_date{
+    display: flex;
+    flex-direction: row;
+}
+
+.user_date .line{
+padding: 1px;
+width: 100%;
+margin-left: 10px;
+height: 1px;
+margin-top: 10px;
+background: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.user_link{
+    background-color: #D8C8B0;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.user_link a{
+    border-radius: 10px;
+    background-color: #D8C8B0;
+}
+.user_link:hover{ 
+    background-color: white;
+    color: #D8C8B0;
+}
+
+@media only screen and (max-width:990px){
+    .user_card{
+        width: 95%;
+        margin: 0 2.5%;
+    }
+    .user_card .proposals{
+        gap: 10px !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+}

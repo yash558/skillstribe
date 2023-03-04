@@ -1,0 +1,110 @@
+.navbar .login {
+  color: #ad021a;
+  font-family: 600;
+  font-size: 1.2rem;
+  background-color: #fff;
+
+}
+
+.navbar{
+  background: #eddbc1;
+  z-index: 1000;
+}
+
+.navbar .login a {
+  color: #ad021a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #fff;
+
+}
+
+.login{
+  padding: 0.5rem;
+  border-radius: 7px;
+}
+
+.navbar .login:hover {
+  color: #ad021a;
+}
+
+.input-icons {
+  justify-content: space-between;
+  border-radius: 5px;
+  border: 2px solid black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.input-icons input {
+  border: none;
+  outline: none;
+}
+
+.input-icons input:focus {
+  outline: none;
+  background-color: #eddbc1;
+  border: none;
+}
+
+.input-icons ::placeholder {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.input-icons .search {
+  margin-top: 10px;
+  gap: 10px;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+
+.input-icons input {
+  padding: 10px;
+  color: #ad021a;
+  background-color: #eddbc1;
+}
+.input-icons span {
+  font-weight: 900;
+}
+
+.input-icons .search i {
+  -webkit-text-stroke: 1px #000;
+  font-weight: 900;
+  position: relative;
+  color: #000;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar{
+    width: 100vw;
+    /* overflow-x: hidden; */
+  }
+  .navbar .logo-link{
+    width: 30vw;
+  }
+  .navbar img{
+    width: 100%;
+    object-fit: contain;
+  }
+ .navbar .buttons{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .navbar .input-icons{
+  display: flex;
+  justify-content: center;  
+  margin-top: 1rem;
+  width: 100%;
+ }
+}
+  
+@media screen and (max-width: 768px) {
+  .navbar .search {
+    display: none;
+  }
+}

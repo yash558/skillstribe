@@ -1,0 +1,65 @@
+
+.Description-main{
+    margin: 15vh 15vw;
+    /* text-align: center; */
+    /* background-color: white; */
+    height: auto;
+    padding: 3vh 5vw;
+    border-radius: 20px;
+    border: 1px solid;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+   
+}
+
+.description-main-head{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 3vh;
+}
+.description-main-1{
+    margin: 3vh 0;
+    }
+    .description-main-1-text{
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        
+    }
+
+    .description-main-point{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    
+    .description-main-point-1{
+        margin-bottom: 5px;
+    }
+    .form-control{
+        width: 70%;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    input#file-input {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .description-buttons{
+        text-align: center;
+        margin-top: 5vh;
+        background-color: transparent;
+    }
+    
+    .description-cancel, .description-continue{
+         font-size: 20px;
+         width: 30%;
+        margin-right: 2vw;
+        background-color:#ad021a ;
+        color: white;
+        border: 0;
+        outline: none;
+        height: 40px;
+        border-radius: 5px;
+    }
+    

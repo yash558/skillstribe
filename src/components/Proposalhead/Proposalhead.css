@@ -1,0 +1,57 @@
+.proposalhead-main{
+    margin: 15vh 10vw;
+   
+    height: auto;
+
+    padding: 3vh 5vw;
+    border-radius: 20px;
+    border: 1px solid;
+    box-shadow: inset 0 0em 3em rgba(91, 91, 91, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(105, 105, 105, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+.proposalhead-main-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button.proposalhead-main-1-btn-cancel,.proposalhead-main-1-btn-fund,.proposalhead-main-1-btn-refresh {
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+    border: 0;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0;
+}
+span.proposalhead-main-1-head {
+    font-size: 25px;
+    font-weight: 500;
+}
+.proposalhead-main-1-details {
+    display: flex;
+    flex-direction: column;
+}
+.proposalhead-main-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+span.proosalhead-main-info {
+    margin: 10px 0 20px;
+}
+.proposalhead-main-3 {
+    display: flex;
+}
+.proposalhead-main-3-1 {
+    background-color: #d9ba8d;;
+    width: 19%;
+    text-align: center;
+    padding: 10px;
+    margin-right: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+}

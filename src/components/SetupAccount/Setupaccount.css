@@ -1,0 +1,141 @@
+.setupaccount {
+    display: flex;
+    flex-direction: row;
+    margin: 8rem 1rem 2rem 12rem;
+    width: 50%;
+    /* margin: 6rem; */
+  }
+  
+  .setupaccount_heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .setupaccount_heading h1 {
+      color: #000;
+      font-weight: 600;
+      font-size: 50px;
+  }
+  
+  .setupaccount_heading button {
+    padding: 8px;
+    border-radius: 8px;
+    width: 200px;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #ad021a;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  
+  
+  .setupaccount label{
+      font-size: 21px;
+      font-weight: 400;
+  }
+  
+  .setupaccount input , .setupaccount textarea, .setupaccount select{
+      border: 1px solid black;
+      background-color: #D8C8B0;
+  }
+
+  .setupaccount .email{
+    width: 80vh;
+  }
+  .setupaccount .role{
+    width: 40vh;
+  }
+  .setupaccount .country{
+    width: 50vh;
+  }
+  .setupaccount .phone{
+    width: 50vh;
+  }
+    
+  .setupaccount .hours{
+    border: 1px solid black;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: #D8C8B0;
+}
+
+.setupaccount .hours span{
+ background-color: #D8C8B0;
+ margin-top: 5px;
+}
+
+  .setupaccount .hours_time, .setupaccount .weeks{
+    border: none;
+    background-color: transparent;
+  }
+
+  .setupaccount .hours_time{
+    
+    width: 5vh;
+  }
+  .email_input{
+    width: 28rem;
+  }
+
+@media only screen and (max-width:990px){
+  .setupaccount{
+    flex-direction: column-reverse !important;
+    width: 95%;
+    margin: 6rem 2.5%;
+  }
+
+  .setupaccount_wrapper{
+    margin-top: 3rem;
+  }
+
+  .setupaccount .public_right{
+    position: inherit;
+  }
+
+  .setupaccount_heading{
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .setupaccount_heading button{
+    width: fit-content;
+    padding: 10px 20px;
+  }
+
+  .setupaccount_heading h1{
+    margin-bottom: 0;
+  }
+
+  .form-control{
+    width: 100% !important;
+  }
+
+  .email_input{
+    width: 95vw !important;
+    overflow-x: hidden;
+  }
+
+  .email_selectRole{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 0px !important;
+  }
+
+  .workingHours_timezone{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 1rem !important;
+  }
+}

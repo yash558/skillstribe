@@ -1,0 +1,84 @@
+.project_heading h1{
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+}
+
+
+.project_category{
+    display: flex;
+    gap: 1rem;
+    margin: 2rem;
+    background-color: #fff;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin: 3rem 9rem;
+    border-radius: 10px;   
+border: 1px solid #000;
+
+}
+
+.project_category select, .category, .category_search, input, option, .project_category p, .category_right h4, .category_right p, .category_right button, .category_right input{
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+}
+.category_search input{
+    width: 40rem;
+    height: 2rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.project_detail{
+    margin-left: 5rem;
+    margin-right: 3rem;
+    align-items: center;
+}
+
+
+.view_more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+.project_details{
+    display: flex;
+    flex-direction: column;
+    
+}
+.category_right{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    background-color: #fff;    
+    padding-left: 1rem;
+    margin: 0rem 9rem;
+    border-radius: 10px;    
+}
+
+@media only screen and (max-width:990px){
+    .project_category{
+        width: 90vw;
+        overflow-x: hidden;
+        margin: auto 5vw;
+        align-items: center;
+        padding:10px;
+        gap: 2.5%;
+    }
+    .project_category .category{
+        gap: 0;
+    }
+    .project_category select, .category, .category_search, input, option, .project_category p, .category_right h4, .category_right p, .category_right button, .category_right input{
+        font-size: 1rem !important;
+        width: fit-content;
+    }
+    .project_category p{
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,18 @@
+.user_title h1{
+    margin:3rem 5rem;
+    padding-top: 2rem;
+    margin-bottom: 0rem;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+@media only screen and (max-width:990px){
+    .user{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .user_title h1 {
+        margin: 2rem 5%;
+        margin-bottom: 1rem;
+    }
+}
