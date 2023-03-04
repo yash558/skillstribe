@@ -2,16 +2,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBell } from '@fortawesome/free-solid-svg-icons';
 import React, { useState, useEffect } from 'react';
 import LoadingOverlay from 'react-loading-overlay';
-import { apiTransact, getDataRows } from '../../components/service/alaio';
+// import { apiTransact, getDataRows } from '../../components/service/alaio';
 import { Button } from 'semantic-ui-react';
 import './notifications.scss';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Notifications() {
 	const [rows, setRows] = useState([]);	
 	const [active, setActive] = useState(false);
 
-	let history = useHistory();
+	let history = useNavigate();
 	
 	let storage = JSON.parse(localStorage.getItem('User'));
 	let role = localStorage.getItem('role');
@@ -27,16 +27,16 @@ function Notifications() {
 			reverse: true
 		};
 
-		await getDataRows(options).then(async(res) => {
-			for await(let row of res.rows) {
-				if(row.type.toLowerCase().includes('invited')) row.subtype = 'invited'
-				if(row.type.toLowerCase().includes('ready to be completed')) row.subtype = 'completed'
-				if(row.type.toLowerCase().includes('negotiations have been opened')) row.subtype = 'negotiations'
-				if(row.type.toLowerCase().includes('rate the gig')) row.subtype = 'rategig'
-				setRows(rows=> [...rows, row])
-			}
-			setActive(false)
-		})
+		// await getDataRows(options).then(async(res) => {
+		// 	for await(let row of res.rows) {
+		// 		if(row.type.toLowerCase().includes('invited')) row.subtype = 'invited'
+		// 		if(row.type.toLowerCase().includes('ready to be completed')) row.subtype = 'completed'
+		// 		if(row.type.toLowerCase().includes('negotiations have been opened')) row.subtype = 'negotiations'
+		// 		if(row.type.toLowerCase().includes('rate the gig')) row.subtype = 'rategig'
+		// 		setRows(rows=> [...rows, row])
+		// 	}
+		// 	setActive(false)
+		// })
 	}
 
 	const setRead = async(item) => {
@@ -49,7 +49,7 @@ function Notifications() {
 			gigid: item.gigid,
 			status: 'read'
 		}
-		apiTransact('notificat', data)
+		// apiTransact('notificat', data)
 	}
 
 	const onNavigate = async(route, item) => {
@@ -62,19 +62,19 @@ function Notifications() {
 	},[])
 
 	return(
-		<LoadingOverlay
-        active={active}
-        spinner
-		text="Exploring the Chain"
-		fadeSpeed={500}
-        className="spinner"
-        styles={{
-            overlay: (base) => ({
-                ...base,
-                background: 'rgba(221, 13, 0, 0.5)'
-            })
-        }}
-        >
+		// <LoadingOverlay
+        // active={active}
+        // spinner
+		// text="Exploring the Chain"
+		// fadeSpeed={500}
+        // className="spinner"
+        // styles={{
+        //     overlay: (base) => ({
+        //         ...base,
+        //         background: 'rgba(221, 13, 0, 0.5)'
+        //     })
+        // }}
+        // >
 			<div className="not-main">
 				<div className="my-container">
 					<div className="not-header-con">
@@ -133,7 +133,7 @@ function Notifications() {
 					</div>
 				</div>
 			</div>
-		</LoadingOverlay>
+		// </LoadingOverlay>
 	)
 }
 

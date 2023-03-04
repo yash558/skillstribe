@@ -12,10 +12,11 @@ import Table from "./components/Table/Table";
 import Create from "./components/Create/Create";
 import Footer from "./components/Footer/Footer";
 
+import Notifications from './Screens/notifications/notifications';
 function App() {
   return (
     <div className="App">
-      <Navbar />          
+      <Navbar />    
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/myaccount" element={<MyAccount />} />
@@ -25,7 +26,7 @@ function App() {
         <Route path="/account" element={<Account />} />
         <Route path="/reward" element={<Reward />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
