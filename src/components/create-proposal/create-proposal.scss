@@ -1,0 +1,124 @@
+.create-proposal-main-container {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+	.create-proposal-sub-container {
+		width: 100%;
+
+		.create-proposal-title-container {
+            margin: 1rem;
+            padding-bottom: 2rem;
+			display: flex;
+			justify-content: flex-start;
+            align-items: center;
+            border-bottom: 1px solid lightgray;
+
+			h3{
+				span{
+                    color: #FE6360;
+                    padding-left: 5px;
+				}
+			}
+		}
+
+		.create-proposal-form-container {
+			padding: 1rem;
+			margin: 1rem 0rem;
+
+			textarea {
+				width: 100%;
+				border: none;
+				background-color: #EFF5F6;
+				padding: 1rem;
+			}
+			textarea:focus {
+				background-color: white;
+			}
+			textarea::placeholder {
+				padding: 0;
+				margin: 0;
+			}
+			h3 {
+				padding: 0;
+				margin: 0.5rem 0rem;
+			}
+		}
+
+		.create-proposal-milestone-container {
+			padding: 1rem;
+
+			.milestone-header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.milestone {
+				transition: 1s ease-in-out;
+				border: 1px solid lightgray;
+				padding: 1rem;
+				margin: 1rem 0rem;
+
+				h5 {
+					padding: 0;
+					margin: 0;
+				}
+				label {
+					margin: 1rem 0rem;
+                }
+                input, textarea {
+                    margin-bottom: 1rem;
+                }
+			}
+		}
+
+		.date-sub-container {
+			padding: 1rem;
+			margin: 1rem 0rem;
+		}
+
+		.create-proposal-button-container {
+            width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+            button {
+                width: 100% !important;
+                background-color: #FE6360;
+                border: 1px solid #FE6360;
+                color: white !important; 
+                font-weight: 600;
+                font-size: 1.2rem;
+                padding: 15px 25px;
+                transition-duration: .2s;
+            }
+            button:hover {
+                border: 1px solid #FE6360;
+                color: #FE6360 !important;
+                box-shadow: inset 0 4rem 0 0 white;
+            }
+		}
+	}
+}
+
+.bottom {
+    margin-bottom: 3rem;
+}
+
+.additional-files-container {
+	.attachment-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+
+		button {
+			padding: 0.5rem;
+			border: none;
+			color: #fff;
+			background-color: #FE6360;
+		}
+	}
+}
