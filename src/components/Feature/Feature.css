@@ -169,6 +169,16 @@
     margin: 5%;
     width: 90%;    
   }
+  .feature .feature_title h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .feature .feature_title p {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 15px;  
+    padding: 0 10px;
+  }
   .feature_info p {
     font-weight: 400;
     font-size: 19px;

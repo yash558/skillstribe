@@ -148,4 +148,23 @@ option,
   .gigs_detail{
     margin-left: 0;
   }
+  .last_link{ 
+    border-radius: 8px;
+    padding: 4px;
+    background-color: #AD021A; 
+    width: auto; 
+    height: auto; 
+   margin: 2rem;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  
+  .last_link .edit{ 
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #AD021A;
+  }
 }

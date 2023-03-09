@@ -62,6 +62,7 @@
     border-radius: 10px;    
 }
 
+
 @media only screen and (max-width:990px){
     .project_category{
         width: 90vw;
@@ -80,5 +81,11 @@
     }
     .project_category p{
         margin-bottom: 0;
+    }
+
+    .last_link .edit{
+        margin: 0;
+        padding: 0;
+     width: 100%;
     }
 }

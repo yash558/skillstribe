@@ -5,7 +5,7 @@ import ProjectCard from "./../ProjectCard/ProjectCard";
 const ProjectCart = () => {
   return (
     <>
-      <Carousel cols={3} rows={2} gap={1}>
+      <Carousel cols={3} rows={2} gap={20}>
         <Carousel.Item>
           <ProjectCard
             heading="Branding Design Guidelines"
