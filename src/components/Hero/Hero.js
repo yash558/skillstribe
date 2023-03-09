@@ -13,7 +13,7 @@ const Hero = () => {
                                     Decentralized</h1>
                                 <h2 className='my-2'>
                                     Skillstribe is the worlds first fully decentralized freelance marketplace. Find the best talent to hire for your project and find clients that are looking for your skillset.
-                                    <br /> <br />
+                                    <br /><br />
                                     Skillstribe operates fully off of the Alacrity blockchain with no central
                                     intermediary
                                 </h2>

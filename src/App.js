@@ -13,10 +13,12 @@ import Create from "./components/Create/Create";
 import Footer from "./components/Footer/Footer";
 
 
+
 function App() {
   return (
     <div className="App">
-      <Navbar />     
+      <Navbar />
+      {/* <CreateProposal/> */}
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/myaccount" element={<MyAccount />} />
